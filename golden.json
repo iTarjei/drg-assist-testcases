@@ -406,6 +406,19 @@
           "219"
         ]
       }
+    },
+    {
+      "id": 27,
+      "name": "Infisert kneprotese — revisjon med ny sementert totalprotese",
+      "text": "infeksjon i kneprotese 2 år etter primær totalprotese, operert med revisjon og ny sementert totalprotese",
+      "expect": {
+        "procs_any": [
+          "NGW69",
+          "NGC40"
+        ],
+        "hd": "T845",
+        "drg": "209J"
+      }
     }
   ]
 }

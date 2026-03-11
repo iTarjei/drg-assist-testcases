@@ -46,6 +46,23 @@ Etter endring i master skal GitHub-kopien (`/Users/tarjeivinje/Desktop/DRG/drg-a
 4. **Ikkje legg til case du ikkje har køyrt gjennom appen.** Testcasa skal vere validerte, ikkje teoretiske.
 5. **Unngå duplikat** — sjekk at det ikkje allereie finst eit case med same inngrep og diagnose.
 
+## Kjende datamanglar i appen
+
+### Korsbånd-kodar (NGE60-77) manglar i app-data
+
+**Problem**: 12 korsbånd-kodar finst i `proc.csv` (har PROCPR-gruppering) men manglar i `NCSP.csv` (har ikkje norsk tekst). Build-scriptet (`build_drg_app.py` linje 957) krev tekst frå NCSP.csv og filtrerer vekk kodar utan tekst.
+
+**Kodar som manglar i appen:**
+- NGE60-63: Primær rekonstruksjon (fremre/bakre korsbånd, mediale/laterale kollateral)
+- NGE70-77: Revisjon av tidlegare rekonstruert korsbånd
+
+**Kodar som er utgåtte** (finst i NCSP.csv men IKKJE i proc.csv):
+- NGE41-56: Gamle rekonstruksjonskodar (u/m protesemateriale) — ikkje lenger grupperte
+
+**Konsekvens**: Appen foreslår NGE35 (transposisjon) for ACL-rekonstruksjon i staden for NGE60 (primær rekonstruksjon). Ikkje lag testcase for korsbåndskirurgi før dette er fiksa.
+
+**FIX**: Build-scriptet må hente tekst frå `proc.csv` som fallback når `NCSP.csv` manglar tekst, eller `NCSP.csv` må oppdaterast med dei nye kodane. Kjelde: `proc.csv` linje 25223-25240 (NGE60-63), og tilsvarande for NGE70-77.
+
 ## Kva case er nyttige å leggje til?
 
 Prioriter case som viser ein av desse mekanismane:
