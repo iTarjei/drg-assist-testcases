@@ -1,0 +1,234 @@
+{
+  "description": "Gullstandard-testsett for v2_production_gcp DRG Hjelpar. 19 ortopediske case frå test-full.js. Inkluderer prosedyrar, diagnosar, DRG og multitrauma.",
+  "version": "1.0",
+  "created": "2026-03-10",
+  "cases": [
+    {
+      "id": 1,
+      "name": "Patologisk fraktur proksimale femur — ca mammae metastase — hemiprotese",
+      "text": "brudd i proximale femur pga metastase frå ca mammae, oper med sementert hemiprotese",
+      "expect": {
+        "procs": ["NFB12"],
+        "hd": "C795",
+        "diags_contain": ["C795", "M907"],
+        "drg": "209"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Patologisk fraktur humerusskaft — ca coli metastase — nagle",
+      "text": "brudd i skaft humerus pga metastase frå ca coli, operert med nagle",
+      "expect": {
+        "procs": ["NBJ55"],
+        "hd": "C795",
+        "diags_contain": ["C795", "M907"],
+        "drg": ["218", "219"]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Distal humerusfraktur — plate/skruer — postop nerveskade radialis",
+      "text": "distal fraktur i humerus operert med plate og skruer, postop skade nervus radialis",
+      "expect": {
+        "procs": ["NBJ66"],
+        "hd": "S424",
+        "drg": ["218", "219"]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Acetabulumfraktur — plate/skruer — nerveskade n. ischiadicus",
+      "text": "brudd i acetabulum opr med plate og skruer, nerveskade n ishiadicus med dropfot",
+      "expect": {
+        "procs": ["NEJ69"],
+        "hd": "S324",
+        "drg": ["210", "211"]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Distal femurfraktur — plate/skruer/cerclage — arterieskade — compartment",
+      "text": "brudd i distale femur oper med plate og skruer samt cerclage, postop skade av arterie femoralis, compartmentsydrom legg fasciotomert",
+      "expect": {
+        "procs_any": ["NFJ65", "NFJ45", "NGM09"],
+        "hd": "S724",
+        "drg": ["210", "211"]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Bilulykke — multitraume — humerus+femur — arterieskade — compartment",
+      "text": "bilulykke, skaftfraktur humerus og open skaftfraktur femur med nagle begge, skade arteria femoralis og compartmentsyndrom legg fasciotomert",
+      "expect": {
+        "procs_any": ["NFJ54", "NBJ55", "NGM09"],
+        "hd": "T026",
+        "mt_fractures": ["S723", "S423"],
+        "drg": "486"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Planovalgus fot — calcaneus forlenging — subtalar artrodese — cotton",
+      "text": "planovalgus fot erverva operert med forlenging av calcaneus, subtalar artrodese fiksert med skruer og cotton osteotomi med plantarisering av 1 stråle, postop skade på nervus peroneus superficialis",
+      "expect": {
+        "procs_any": ["NHK65", "NHG41", "NHK56"],
+        "hd": "M214",
+        "drg": ["218", "219"]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Burst-fraktur L2-L4 — bakre fiksasjon — blæreparese",
+      "text": "ryggbrudd burst l2, 3, og 4 opr med bakre fiksasjon med skruer og stag, nerveskade med blæreparese",
+      "expect": {
+        "procs": ["NAJ54"],
+        "hd": "S32",
+        "drg": ["214", "215"]
+      }
+    },
+    {
+      "id": 9,
+      "name": "Tibialplatåfraktur — plate/skruer — antikoagulasjon — postop blødning",
+      "text": "tibialplatåfraktur operert med plate og skruer, pasienten brukar antikoagulasjon for atrieflimmer, postop blødning med behov for blodtransfusjon",
+      "expect": {
+        "procs": ["NGJ61"],
+        "hd": "S821",
+        "drg": ["218", "219"]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Multitraume — fallulykke — humerus+femur — margnagle begge",
+      "text": "fall frå stillas, open skaftfraktur humerus og lukka femurskaftfraktur, begge operert med margnagle",
+      "expect": {
+        "procs_any": ["NBJ55", "NFJ54"],
+        "hd": "T026",
+        "mt_fractures": ["S42", "S72"],
+        "drg": "486"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Open tibiaskaftfraktur — margnagle — delhudstransplantat",
+      "text": "open tibiaskaftfraktur med stor blotdelsskade operert med margnagle og delhudstransplantat",
+      "expect": {
+        "procs_any": ["NGJ52", "ZZA00"],
+        "hd": "S822",
+        "drg": "217"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Lukka tibiaskaftfraktur — margnagle",
+      "text": "lukka tibiaskaftfraktur operert med margnagle",
+      "expect": {
+        "procs": ["NGJ52"],
+        "hd": "S822",
+        "drg": ["218", "219"]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Multitraume — MC-ulykke — ribbeinsbrudd+femur — hemopneumothorax",
+      "text": "motorsykkelulykke, multiple ribbeinsbrudd med hemopneumothorax og skaftfraktur femur operert med margnagle",
+      "expect": {
+        "procs": ["NFJ54"],
+        "hd": "T027",
+        "mt_fractures": ["S72", "S22"],
+        "drg": "486"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Distal radiusfraktur — volar plate — kjend osteoporose",
+      "text": "distal radiusfraktur etter fall, operert med volar plate, kjend osteoporose",
+      "expect": {
+        "procs": ["NCJ65"],
+        "hd": "S525",
+        "drg": ["223", "224"]
+      }
+    },
+    {
+      "id": 17,
+      "name": "C2-fraktur — bakre fiksasjon skruer/stag",
+      "text": "brudd i 2. cervikalvirvel operert med bakre fiksasjon med skruer og stag",
+      "expect": {
+        "procs": ["NAJ50"],
+        "hd": "S121",
+        "drg": ["214", "215"]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Artroskopisk meniskektomi — gammal medial meniskruptur",
+      "text": "artroskopisk meniskektomi for gammal medial meniskruptur i kne",
+      "expect": {
+        "procs": ["NGD01"],
+        "hd": "M232",
+        "drg": ["221", "222", "232"]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Open tibiaskaftfraktur — MC-ulykke — margnagle — DVT postop",
+      "text": "open tibiaskaftfraktur etter MC-ulykke, operert med margnagle, utvikla djup venetrombose i same legg postoperativt",
+      "expect": {
+        "procs": ["NGJ52"],
+        "hd": "S822",
+        "drg": ["218", "219"]
+      }
+    },
+    {
+      "id": 23,
+      "name": "Torakalvirvel-fraktur — inkomplett ryggmargskade — bakre fiksasjon",
+      "text": "brudd i torakalvirvel etter fall frå stige med inkomplett ryggmargskade, operert med bakre fiksasjon med skruer og stag",
+      "expect": {
+        "procs": ["NAJ52"],
+        "hd": "S220",
+        "drg": ["214B", "215B"]
+      }
+    },
+    {
+      "id": 24,
+      "name": "Pertrokantær femurfraktur — 85 år — margnagle — postop delirium",
+      "text": "pertrokantær femurfraktur hos 85 år gamal mann, operert med margnagle, utvikla postoperativt delirium",
+      "expect": {
+        "procs": ["NFJ51"],
+        "hd": "S721",
+        "drg": ["210", "211"]
+      }
+    },
+    {
+      "id": 25,
+      "name": "Bimalleolær ankelfraktur — plate/skruer — diabetes type 2",
+      "text": "bimalleolær ankelfraktur operert med plate og skruer, pasienten har diabetes type 2",
+      "expect": {
+        "procs": ["NHJ62"],
+        "hd": "S82",
+        "diags_contain": ["S82", "E119"],
+        "drg": ["218", "219"]
+      }
+    },
+    {
+      "id": 26,
+      "name": "Proksimal humerusfraktur — invers skulderprotese — diabetes type 2",
+      "text": "proksimal humerusfraktur hos eldre kvinne operert med invers skulderprotese hybrid, kjend diabetes type 2",
+      "expect": {
+        "procs": ["NBB30"],
+        "hd": "S422",
+        "diags_contain": ["S422", "E119"],
+        "drg": "491"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Artroskopisk rotator cuff-reparasjon — kronisk ruptur",
+      "text": "artroskopisk rotator cuff-reparasjon for kronisk rotator cuff-ruptur",
+      "expect": {
+        "procs": ["NBL49"],
+        "hd": "M751",
+        "drg": "232"
+      }
+    }
+  ]
+}
