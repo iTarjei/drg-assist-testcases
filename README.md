@@ -20,7 +20,7 @@ Sist køyrt: 11. mars 2026.
 
 ## Eksempel: CC-differanse
 
-Ved å synleggjere DRG-konsekvensen i sanntid ser klinikaren korleis tilleggstilstandar påverkar grupperinga — det gjev betre dokumentasjon av komorbiditetar og meir komplett koding. Tre eksempel:
+Klinikaren skriv ein vanleg klinisk beskriving — verktøyet tolkar friteksten, identifiserer prosedyrekodar, diagnosar og tilleggstilstandar, og viser DRG-konsekvensen i sanntid. Tre eksempel på korleis ein bidiagnose endrar DRG-gruppe:
 
 ### Bimalleolær ankelfraktur + diabetes type 2
 - **Input:** «bimalleolær ankelfraktur operert med plate og skruer, pasienten har diabetes type 2»
