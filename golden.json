@@ -419,6 +419,105 @@
         "hd": "T845",
         "drg": "209J"
       }
+    },
+    {
+      "id": 28,
+      "name": "Pertrokantær femurfraktur — margnagle — underernæring + delirium",
+      "text": "pertrokantær femurfraktur hos 82 år gamal kvinne, operert med margnagle, utvikla postoperativt delirium, kjend underernæring",
+      "expect": {
+        "procs": ["NFJ51"],
+        "hd": "S721",
+        "diags_contain": ["S721", "E46", "F05"],
+        "drg": ["210N", "211N"]
+      }
+    },
+    {
+      "id": 29,
+      "name": "Pertrokantær femurfraktur — margnagle — pneumoni + hyponatremi",
+      "text": "pertrokantær femurfraktur hos 78 år gamal mann, operert med margnagle, utvikla postoperativ pneumoni og hyponatremi",
+      "expect": {
+        "procs": ["NFJ51"],
+        "hd": "S721",
+        "diags_contain": ["S721", "J189", "E871"],
+        "drg": ["210N", "211N"]
+      }
+    },
+    {
+      "id": 30,
+      "name": "Bimalleolær ankelfraktur — plate/skruer — paralytisk ileus + hypokalemi",
+      "text": "bimalleolær ankelfraktur operert med plate og skruer, postoperativt utvikla paralytisk ileus og hypokalemi",
+      "expect": {
+        "procs": ["NHJ62"],
+        "hd": "S828",
+        "diags_contain": ["S828", "K560", "E876"],
+        "drg": ["218", "219"]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Tibialplatåfraktur — plate/skruer — posthemorragisk anemi + UVI",
+      "text": "tibialplatåfraktur operert med plate og skruer, postoperativ blødning med akutt posthemorragisk anemi og behov for blodtransfusjon, utvikla urinveisinfeksjon under opphaldet",
+      "expect": {
+        "procs": ["NGJ61"],
+        "hd": "S821",
+        "diags_contain": ["S821", "D62", "N390"],
+        "drg": ["218", "219"]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Acetabulumfraktur — plate/skruer — lungeemboli + akutt nyresvikt",
+      "text": "brudd i acetabulum operert med plate og skruer, postoperativ lungeemboli og akutt nyresvikt",
+      "expect": {
+        "procs": ["NEJ69"],
+        "hd": "S324",
+        "diags_contain": ["S324", "I269", "N179"],
+        "drg": ["210A", "210N", "211A", "211N"]
+      }
+    },
+    {
+      "id": 33,
+      "name": "Distal femurfraktur — plate/skruer — sepsis + akutt nyresvikt",
+      "text": "brudd i distale femur operert med plate og skruer, postoperativt utvikla sepsis med akutt nyresvikt",
+      "expect": {
+        "procs_any": ["NFJ65", "NFJ45"],
+        "hd": "S724",
+        "diags_contain": ["S724", "A419", "N179"],
+        "drg": ["210A", "210N", "211A", "211N"]
+      }
+    },
+    {
+      "id": 34,
+      "name": "Open tibiaskaftfraktur — margnagle — hypernatremi + posthemorragisk anemi",
+      "text": "open tibiaskaftfraktur med bløtdelsskade operert med margnagle og delhudstransplantat, postoperativt utvikla hypernatremi og akutt posthemorragisk anemi",
+      "expect": {
+        "procs_any": ["NGJ52", "ZZA00"],
+        "hd": "S822",
+        "diags_contain": ["S822", "E870", "D62"],
+        "drg": ["217"]
+      }
+    },
+    {
+      "id": 35,
+      "name": "Distal radiusfraktur — volar plate — underernæring + hyponatremi (eldre)",
+      "text": "distal radiusfraktur etter fall hos 81 år gamal kvinne, operert med volar plate, kjend osteoporose og underernæring, utvikla hyponatremi postoperativt",
+      "expect": {
+        "procs": ["NCJ65"],
+        "hd": "S525",
+        "diags_contain": ["S525", "M81", "E46", "E871"],
+        "drg": ["223", "224A"]
+      }
+    },
+    {
+      "id": 36,
+      "name": "Artroskopisk meniskektomi — postop DVT + lungeemboli",
+      "text": "artroskopisk meniskektomi for gammal medial meniskruptur i kne, utvikla djup venetrombose og lungeemboli postoperativt",
+      "expect": {
+        "procs": ["NGD01"],
+        "hd": "M232",
+        "diags_contain": ["M232", "I269"],
+        "drg": ["221", "222", "232"]
+      }
     }
   ]
 }
