@@ -406,6 +406,60 @@
           "219"
         ]
       }
+    },
+    {
+      "id": 27,
+      "name": "Infisert kneprotese — revisjon med ny totalprotese",
+      "text": "infeksjon i kneprotese 2 år etter primær totalprotese, operert med revisjon og ny sementert totalprotese",
+      "expect": {
+        "procs": ["NGC20"],
+        "hd": "T845",
+        "drg": "209J"
+      }
+    },
+    {
+      "id": 28,
+      "name": "Pertrokantær femurfraktur — 82 år — margnagle — underernæring",
+      "text": "pertrokantær femurfraktur hos 82 år gamal underernært kvinne, operert med margnagle",
+      "expect": {
+        "procs": ["NFJ51"],
+        "hd": "S721",
+        "diags_contain": ["S721", "E46"],
+        "drg": ["210", "211"]
+      }
+    },
+    {
+      "id": 29,
+      "name": "Collumfraktur femur — hemiprotese — postop akutt nyresvikt",
+      "text": "collumfraktur femur hos 78 år gamal mann, operert med sementert hemiprotese, utvikla akutt nyresvikt postoperativt",
+      "expect": {
+        "procs": ["NFB12"],
+        "hd": "S720",
+        "diags_contain": ["S720", "N179"],
+        "drg": ["209S", "209T"]
+      }
+    },
+    {
+      "id": 30,
+      "name": "Tibialplatåfraktur — plate/skruer — postop lungeemboli",
+      "text": "tibialplatåfraktur operert med plate og skruer, utvikla lungeemboli postoperativt dag 3",
+      "expect": {
+        "procs": ["NGJ61"],
+        "hd": "S821",
+        "diags_contain": ["S821", "I269"],
+        "drg": ["218", "219"]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Bimalleolær ankelfraktur — plate/skruer — postop sepsis S. aureus",
+      "text": "bimalleolær ankelfraktur operert med plate og skruer, postoperativ sårinfeksjon med sepsis, stafylokokk aureus påvist i blodkultur",
+      "expect": {
+        "procs": ["NHJ62"],
+        "hd": "S828",
+        "diags_contain": ["S828", "A410"],
+        "drg": ["218", "219"]
+      }
     }
   ]
 }

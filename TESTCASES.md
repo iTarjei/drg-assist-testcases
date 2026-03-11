@@ -1,6 +1,6 @@
 # Testcase — oversikt
 
-26 syntetiske ortopediske case. Kvar rad viser klinisk beskriving (input), forventa prosedyrekode (NCSP), hovuddiagnose (ICD-10) og DRG-gruppe. Alle case er validerte mot ISF 2026-regelverket.
+31 syntetiske ortopediske case. Kvar rad viser klinisk beskriving (input), forventa prosedyrekode (NCSP), hovuddiagnose (ICD-10) og DRG-gruppe. Alle case er validerte mot ISF 2026-regelverket.
 
 | # | Klinisk beskriving | Prosedyre (NCSP) | Hovuddiagnose (ICD-10) | DRG |
 |---|---|---|---|---|
@@ -30,10 +30,15 @@
 | 24 | Hallux valgus, osteotomi 1. metatars, skruefiksasjon | NHK57 | M20.1 | 225 |
 | 25 | Spondylolistese L4/L5, bakre spondylodese, diabetes type 2 | NAG74 | M43.1 | 214B/215B |
 | 26 | Open trimalleolær ankelfraktur-luksasjon, plate/skruer, diabetes | NHJ63 | S82.8 | 218/219 |
+| 27 | Infisert kneprotese, revisjon med ny totalprotese | NGC20 | T84.5 | 209J |
+| 28 | Pertrokantær femurfraktur, 82 år, margnagle, underernæring | NFJ51 | S72.1 | 210/211 |
+| 29 | Collumfraktur femur, hemiprotese, postop akutt nyresvikt | NFB12 | S72.0 | 209S/209T |
+| 30 | Tibialplatåfraktur, plate og skruer, postop lungeemboli | NGJ61 | S82.1 | 218/219 |
+| 31 | Ankelfraktur, plate og skruer, postop sepsis S. aureus | NHJ62 | S82.8 | 218/219 |
 
-## DRG-effekt: To typar kodingsmønster
+## DRG-effekt: Fire typar kodingsmønster
 
-Testcasa illustrerer to ulike mekanismar der korrekt koding endrar DRG-gruppe:
+Testcasa illustrerer fire ulike mekanismar der korrekt koding endrar DRG-gruppe:
 
 ### 1. CC-differanse (bidiagnose endrar gruppe innanfor same DRG-par)
 
@@ -44,6 +49,10 @@ Ein tilleggstilstand (t.d. diabetes, delirium, blæreparese) gjev CC-status og f
 | #20 Ankelfraktur + diabetes | E11.9 | 219 → 218 | +53 458 kr |
 | #8 Ryggbrudd + blæreparese | G83.4 | 215B → 214B | +156 948 kr |
 | #19 Hoftefraktur + delirium | F05.9 | 211N → 210N | +49 976 kr |
+| #28 Hoftefraktur + underernæring | E46 | 211N → 210N | +49 976 kr |
+| #29 Collumfraktur + nyresvikt | N17.9 | 209T → 209S | +31 783 kr |
+| #30 Tibialplatåfraktur + lungeemboli | I26.9 | 219 → 218 | +53 458 kr |
+| #31 Ankelfraktur + sepsis | A41.0 | 219 → 218 | +53 458 kr |
 
 ### 2. Multitraume-deteksjon (kodingsmønster flyttar heile DRG-gruppa)
 
@@ -53,7 +62,15 @@ Når frakturar i to ulike grov-regionar (t.d. overekstremitet + underekstremitet
 |------|-----------|-----------|------------|
 | #10 Humerus + femur, margnagle begge | DRG 219 (131 791 kr) | DRG 486 (479 827 kr) | **+348 036 kr** |
 
-### 3. Reoperasjon — korrekt prosedyrekode (W-kode + spesifikk U-kode)
+### 3. Property-driven DRG-hopp (diagnose-eigenskap endrar heile gruppa)
+
+Nokre diagnosekombinasjonar har eigenskapar som flyttar casen til ein heilt anna DRG — ikkje berre CC-splitting. T84.5 (infeksjon i leddprotese) har eigenskapen 08X80 som endrar revisjon frå standard til «komplisert».
+
+| Case | Utan 08X80 | Med T84.5 (08X80) | Differanse |
+|------|-----------|-------------------|------------|
+| #27 Infisert kneprotese, revisjon | DRG 209F (178 398 kr) | DRG 209J (331 415 kr) | **+153 017 kr** |
+
+### 4. Reoperasjon — korrekt prosedyrekode (W-kode + spesifikk U-kode)
 
 Ved komplikasjon etter tidlegare inngrep skal prosedyren kodast med reopkode (W-kode) fyrst, og fjerning av osteosyntesemateriale med NxU49 (ikkje generell NxU99). Utan dette hamnar opphaldet i feil DRG.
 
@@ -69,14 +86,16 @@ Casane dekker:
 - **Multitraume** — T02-kodar, DRG 486
 - **Elektive inngrep** — artroskopi, rotator cuff, planovalgus
 - **Protesekirurgi** — invers skulderprotese
-- **Komplikasjonar** — nerveskade, karskade, compartment, DVT, delirium, blødning
+- **Komplikasjonar** — nerveskade, karskade, compartment, DVT, delirium, blødning, sepsis, lungeemboli, nyresvikt
+- **Gøymte CC-kodar** — underernæring (E46), akutt nyresvikt (N17.9), lungeemboli (I26.9), sepsis (A41.0)
+- **Property-driven hopp** — T84.5 (infeksjon leddprotese) → DRG 209J
 
 ## Resultat
 
 | Metric | Resultat |
 |--------|----------|
-| Prosedyre-nøyaktigheit | 26/26 (100 %) |
-| Hovuddiagnose-nøyaktigheit | 26/26 (100 %) |
-| DRG-nøyaktigheit | 26/26 (100 %) |
+| Prosedyre-nøyaktigheit | 31/31 — ikkje køyrt enno |
+| Hovuddiagnose-nøyaktigheit | 31/31 — ikkje køyrt enno |
+| DRG-nøyaktigheit | 31/31 — ikkje køyrt enno |
 
 Sist køyrt: 11. mars 2026.
