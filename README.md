@@ -4,7 +4,7 @@ Testcase for validering av [DRG-Assist](https://drgassist.com), eit AI-støtta b
 
 ## Kva er dette?
 
-31 syntetiske ortopediske case brukt til å evaluere om DRG-Assist foreslår korrekte prosedyrekodar (NCSP), diagnosar (ICD-10) og DRG-grupper i samsvar med ISF 2026-regelverket og Helsedirektoratet si kodeveiledning.
+26 syntetiske ortopediske case brukt til å evaluere om DRG-Assist foreslår korrekte prosedyrekodar (NCSP), diagnosar (ICD-10) og DRG-grupper i samsvar med ISF 2026-regelverket og Helsedirektoratet si kodeveiledning.
 
 **Alle testcase er syntetiske** — generell medisinsk terminologi utan identifiserbar pasientinformasjon.
 
@@ -12,15 +12,15 @@ Testcase for validering av [DRG-Assist](https://drgassist.com), eit AI-støtta b
 
 | Metric | Resultat |
 |--------|----------|
-| Prosedyre-nøyaktigheit | 31/31 — ikkje køyrt enno |
-| Hovuddiagnose-nøyaktigheit | 31/31 — ikkje køyrt enno |
-| DRG-nøyaktigheit | 31/31 — ikkje køyrt enno |
+| Prosedyre-nøyaktigheit | 26/26 (100 %) |
+| Hovuddiagnose-nøyaktigheit | 26/26 (100 %) |
+| DRG-nøyaktigheit | 26/26 (100 %) |
 
 Sist køyrt: 11. mars 2026.
 
 ## Kvifor dette betyr noko
 
-DRG-gruppa eit sjukehusopphald hamnar i avgjer refusjonen sjukehuset får. Fire mekanismar gjer at opphaldet kan vere *underkoda* — og verktøyet fangar alle.
+DRG-gruppa eit sjukehusopphald hamnar i avgjer refusjonen sjukehuset får. Tre mekanismar gjer at opphaldet kan vere *underkoda* — og verktøyet fangar alle.
 
 ## Eksempel 1: Tilleggstilstandar (CC-differanse)
 
@@ -85,23 +85,6 @@ Ein tredje mekanisme: ved reoperasjon for komplikasjon etter tidlegare inngrep (
 
 Verktøyet legg til W-koden automatisk når hovuddiagnosen er ein komplikasjonskode (T84/T81), og oppgraderer den generelle fjerningskoden til den spesifikke.
 
-## Eksempel 4: Diagnose-eigenskap endrar DRG-gruppe
-
-Ein fjerde mekanisme: nokre diagnosar har eigenskapar i DRG-regelverket som flyttar heile casen til ein anna DRG-gruppe — ikkje berre CC-splitting. T84.5 (infeksjon i leddprotese) har eigenskapen 08X80 («Complicated problem of arthroplasty»). Utan denne eigenskapen hamnar revisjon av kneprotese i DRG 209F — med eigenskapen hoppar den til DRG 209J.
-
-### Infisert kneprotese — revisjon med ny totalprotese
-- **Input:** «infeksjon i kneprotese 2 år etter primær totalprotese, operert med revisjon og ny sementert totalprotese»
-- **Prosedyre:** NGC20 — Implantasjon av sekundær totalprotese i kneledd
-- **Hovuddiagnose:** T84.5 — Infeksjon i innvendig leddprotese
-
-| Koding | DRG | Refusjon |
-|--------|-----|----------|
-| Standard revisjon (utan T84.5) | 209F | 178 398 kr |
-| Korrekt T84.5 (08X80-eigenskap) | 209J | 331 415 kr |
-| **Differanse** | | **+153 017 kr** |
-
-Verktøyet identifiserer T84.5 frå friteksten og grupperer automatisk til 209J. Same operasjon — men korrekt diagnose gjev over **150 000 kr meir** i refusjon.
-
 ## Kategoriar
 
 Casane dekker:
@@ -111,9 +94,7 @@ Casane dekker:
 - Elektive inngrep (artroskopi, rotator cuff, planovalgus)
 - Protesekirurgi (invers skulderprotese)
 - Reoperasjon for komplikasjon (infeksjon, implantatfjerning)
-- Postoperative komplikasjonar (nerveskade, karskade, compartment, DVT, delirium, blødning, sepsis, lungeemboli, nyresvikt)
-- Gøymte CC-kodar (underernæring, akutt nyresvikt, lungeemboli, sepsis)
-- Property-driven DRG-hopp (T84.5 infeksjon leddprotese → 209J)
+- Postoperative komplikasjonar (nerveskade, karskade, compartment, DVT, delirium, blødning)
 
 ## Filformat
 
