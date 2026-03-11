@@ -239,6 +239,36 @@
         "hd": "T846",
         "drg": ["218", "219"]
       }
+    },
+    {
+      "id": 29,
+      "name": "Hallux valgus — osteotomi metatars — skruefiksasjon",
+      "text": "hallux valgus operert med osteotomi av 1. metatars og skruefiksasjon",
+      "expect": {
+        "procs": ["NHK57"],
+        "hd": "M201",
+        "drg": "225"
+      }
+    },
+    {
+      "id": 30,
+      "name": "Spondylolistese L4/L5 — bakre spondylodese — diabetes type 2",
+      "text": "degenerativ spondylolistese L4/L5 med spinal stenose, operert med bakre spondylodese med skruer og stag, pasienten har kjend diabetes type 2",
+      "expect": {
+        "procs": ["NAG74"],
+        "hd": "M431",
+        "drg": ["214B", "215B"]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Open trimalleolær ankelfraktur-luksasjon — plate/skruer — diabetes type 2",
+      "text": "open trimalleolær ankelfraktur-luksasjon hos pasient med kjend diabetes type 2, operert med plate og skruer på alle tre malleoler",
+      "expect": {
+        "procs": ["NHJ63"],
+        "hd": "S828",
+        "drg": ["218", "219"]
+      }
     }
   ]
 }

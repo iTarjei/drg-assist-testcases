@@ -1,6 +1,6 @@
 # Testcase — oversikt
 
-23 syntetiske ortopediske case. Kvar rad viser klinisk beskriving (input), forventa prosedyrekode (NCSP), hovuddiagnose (ICD-10) og DRG-gruppe. Alle case er validerte mot ISF 2026-regelverket.
+26 syntetiske ortopediske case. Kvar rad viser klinisk beskriving (input), forventa prosedyrekode (NCSP), hovuddiagnose (ICD-10) og DRG-gruppe. Alle case er validerte mot ISF 2026-regelverket.
 
 | # | Klinisk beskriving | Prosedyre (NCSP) | Hovuddiagnose (ICD-10) | DRG |
 |---|---|---|---|---|
@@ -27,6 +27,9 @@
 | 21 | Proksimal humerusfraktur, invers skulderprotese hybrid, diabetes type 2 | NBB30 | S42.2 | 491 |
 | 22 | Artroskopisk rotator cuff-reparasjon, kronisk ruptur | NBL49 | M75.1 | 232 |
 | 23 | Infisert margnagle tibia, fjerning+debridement, diabetes+KOLS | NGW69, NGU49 | T84.6 | 218/219 |
+| 24 | Hallux valgus, osteotomi 1. metatars, skruefiksasjon | NHK57 | M20.1 | 225 |
+| 25 | Spondylolistese L4/L5, bakre spondylodese, diabetes type 2 | NAG74 | M43.1 | 214B/215B |
+| 26 | Open trimalleolær ankelfraktur-luksasjon, plate/skruer, diabetes | NHJ63 | S82.8 | 218/219 |
 
 ## DRG-effekt: To typar kodingsmønster
 
@@ -72,8 +75,8 @@ Casane dekker:
 
 | Metric | Resultat |
 |--------|----------|
-| Prosedyre-nøyaktigheit | 23/23 (100 %) |
-| Hovuddiagnose-nøyaktigheit | 23/23 (100 %) |
-| DRG-nøyaktigheit | 23/23 (100 %) |
+| Prosedyre-nøyaktigheit | 26/26 (100 %) |
+| Hovuddiagnose-nøyaktigheit | 26/26 (100 %) |
+| DRG-nøyaktigheit | 26/26 (100 %) |
 
 Sist køyrt: 11. mars 2026.

@@ -4,7 +4,7 @@ Testcase for validering av [DRG-Assist](https://drgassist.com), eit AI-støtta b
 
 ## Kva er dette?
 
-23 syntetiske ortopediske case brukt til å evaluere om DRG-Assist foreslår korrekte prosedyrekodar (NCSP), diagnosar (ICD-10) og DRG-grupper i samsvar med ISF 2026-regelverket og Helsedirektoratet si kodeveiledning.
+26 syntetiske ortopediske case brukt til å evaluere om DRG-Assist foreslår korrekte prosedyrekodar (NCSP), diagnosar (ICD-10) og DRG-grupper i samsvar med ISF 2026-regelverket og Helsedirektoratet si kodeveiledning.
 
 **Alle testcase er syntetiske** — generell medisinsk terminologi utan identifiserbar pasientinformasjon.
 
@@ -12,9 +12,9 @@ Testcase for validering av [DRG-Assist](https://drgassist.com), eit AI-støtta b
 
 | Metric | Resultat |
 |--------|----------|
-| Prosedyre-nøyaktigheit | 23/23 (100 %) |
-| Hovuddiagnose-nøyaktigheit | 23/23 (100 %) |
-| DRG-nøyaktigheit | 23/23 (100 %) |
+| Prosedyre-nøyaktigheit | 26/26 (100 %) |
+| Hovuddiagnose-nøyaktigheit | 26/26 (100 %) |
+| DRG-nøyaktigheit | 26/26 (100 %) |
 
 Sist køyrt: 11. mars 2026.
 
