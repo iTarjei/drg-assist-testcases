@@ -43,6 +43,26 @@ Klinikaren skriv ein vanleg klinisk beskriving — verktøyet tolkar friteksten,
 - **Bidiagnose med CC:** F05.9 — Delirium
 - **DRG-effekt:** 211N (95 629 kr) → 210N (145 605 kr) = **+49 976 kr**
 
+## Eksempel: Multitraume-deteksjon
+
+CC-differanse viser effekten av tilleggstilstandar *innanfor* ei DRG-gruppe. Men nokre kodingsmønster flyttar heile grupperinga til ein høgare DRG — med langt større utslag.
+
+Når ein pasient har frakturar i to ulike grov-regionar (t.d. overekstremitet + underekstremitet), skal hovuddiagnosen vere ein T02.x-kode (multitraume) i staden for ein einskild S-kode. Dette flyttar grupperinga frå vanleg ortopedisk DRG til multitraume-DRG (MDC 24).
+
+### Skaftfraktur humerus + femur — begge med margnagle
+- **Input:** «fall frå stillas, open skaftfraktur humerus og lukka femurskaftfraktur, begge operert med margnagle»
+- **Prosedyrar:** NBJ55 + NFJ54 — Osteosyntese med margnagle i humerus og femur
+- **Hovuddiagnose utan multitraumekoding:** S42.31 — Ope brudd i humerusskaft
+- **Hovuddiagnose med multitraumekoding:** T02.6 — Frakturar i overekstremitet og underekstremitet
+
+| Koding | DRG | Refusjon |
+|--------|-----|----------|
+| Berre S-kodar (S42.31 som HD) | 219 | 131 791 kr |
+| Korrekt T02.6 (multitraume) | 486 | 479 827 kr |
+| **Differanse** | | **+348 036 kr** |
+
+Verktøyet detekterer multitraume-mønsteret automatisk og foreslår T02.x som hovuddiagnose — noko ein klinikar lett kan oversjå når frakturane er koda kvar for seg.
+
 ## Kategoriar
 
 Casane dekker:

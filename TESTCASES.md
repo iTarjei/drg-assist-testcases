@@ -27,6 +27,28 @@
 | 21 | Proksimal humerusfraktur, invers skulderprotese hybrid, diabetes type 2 | NBB30 | S42.2 | 491 |
 | 22 | Artroskopisk rotator cuff-reparasjon, kronisk ruptur | NBL49 | M75.1 | 232 |
 
+## DRG-effekt: To typar kodingsmønster
+
+Testcasa illustrerer to ulike mekanismar der korrekt koding endrar DRG-gruppe:
+
+### 1. CC-differanse (bidiagnose endrar gruppe innanfor same DRG-par)
+
+Ein tilleggstilstand (t.d. diabetes, delirium, blæreparese) gjev CC-status og flyttar frå «utan CC» til «med CC»-varianten av same DRG. Typisk differanse: **+50 000 – 157 000 kr**.
+
+| Case | Bidiagnose | DRG-endring | Differanse |
+|------|-----------|-------------|------------|
+| #20 Ankelfraktur + diabetes | E11.9 | 219 → 218 | +53 458 kr |
+| #8 Ryggbrudd + blæreparese | G83.4 | 215B → 214B | +156 948 kr |
+| #19 Hoftefraktur + delirium | F05.9 | 211N → 210N | +49 976 kr |
+
+### 2. Multitraume-deteksjon (kodingsmønster flyttar heile DRG-gruppa)
+
+Når frakturar i to ulike grov-regionar (t.d. overekstremitet + underekstremitet) vert koda med T02.x i staden for separate S-kodar, byter grupperinga frå vanleg ortopedisk DRG til multitraume-DRG (MDC 24). Mykje større utslag.
+
+| Case | Utan T02.x | Med T02.x | Differanse |
+|------|-----------|-----------|------------|
+| #10 Humerus + femur, margnagle begge | DRG 219 (131 791 kr) | DRG 486 (479 827 kr) | **+348 036 kr** |
+
 ## Kategoriar
 
 Casane dekker:
