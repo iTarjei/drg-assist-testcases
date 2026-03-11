@@ -4,7 +4,7 @@ Testcase for validering av [DRG-Assist](https://drgassist.com), eit AI-støtta b
 
 ## Kva er dette?
 
-22 syntetiske ortopediske case brukt til å evaluere om DRG-Assist foreslår korrekte prosedyrekodar (NCSP), diagnosar (ICD-10) og DRG-grupper i samsvar med ISF 2026-regelverket og Helsedirektoratet si kodeveiledning.
+23 syntetiske ortopediske case brukt til å evaluere om DRG-Assist foreslår korrekte prosedyrekodar (NCSP), diagnosar (ICD-10) og DRG-grupper i samsvar med ISF 2026-regelverket og Helsedirektoratet si kodeveiledning.
 
 **Alle testcase er syntetiske** — generell medisinsk terminologi utan identifiserbar pasientinformasjon.
 
@@ -12,9 +12,9 @@ Testcase for validering av [DRG-Assist](https://drgassist.com), eit AI-støtta b
 
 | Metric | Resultat |
 |--------|----------|
-| Prosedyre-nøyaktigheit | 22/22 (100 %) |
-| Hovuddiagnose-nøyaktigheit | 22/22 (100 %) |
-| DRG-nøyaktigheit | 22/22 (100 %) |
+| Prosedyre-nøyaktigheit | 23/23 (100 %) |
+| Hovuddiagnose-nøyaktigheit | 23/23 (100 %) |
+| DRG-nøyaktigheit | 23/23 (100 %) |
 
 Sist køyrt: 11. mars 2026.
 
@@ -67,6 +67,24 @@ Den andre mekanismen har endå større utslag. Når ein pasient har frakturar i 
 
 Verktøyet detekterer multitraume-mønsteret automatisk og foreslår T02.x som hovuddiagnose. Éin pasient, same behandling — men korrekt koding gjev nesten **350 000 kr meir** i refusjon.
 
+## Eksempel 3: Reoperasjon — korrekt prosedyrekode
+
+Ein tredje mekanisme: ved reoperasjon for komplikasjon etter tidlegare inngrep (infeksjon, blødning, sårruptur) skal prosedyren kodast med ein reopkode (W-kode) fyrst, etterfølgd av det spesifikke inngrepet (Kodeveiledningen kap. 7.3). I tillegg skal fjerning av osteosyntesemateriale kodast med NxU49 — ikkje den generelle NxU99. Utan dette hamnar opphaldet i feil DRG.
+
+### Infisert margnagle tibia — fjerning + debridement — diabetes + KOLS
+- **Input:** «infeksjon i osteosyntesemateriale i tibia 3 månader etter margnagling, diabetes type 2 og KOLS, fjerning av nagle og debridement»
+- **Prosedyrar:** NGW69 (reoperasjon for dyp infeksjon) + NGU49 (fjerning av osteosyntesemateriale)
+- **Hovuddiagnose:** T84.6 — Infeksjon i innvendig fiksasjonsanordning
+- **Bidiagnosar med CC:** E11.9 (diabetes) + J44.9 (KOLS)
+
+| Koding | DRG | Refusjon |
+|--------|-----|----------|
+| Utan W-kode, feil U-kode (NGU99) | 231 | 73 841 kr |
+| Korrekt NGW69 + NGU49, med CC | 218 | 185 249 kr |
+| **Differanse** | | **+111 408 kr** |
+
+Verktøyet legg til W-koden automatisk når hovuddiagnosen er ein komplikasjonskode (T84/T81), og oppgraderer den generelle fjerningskoden til den spesifikke.
+
 ## Kategoriar
 
 Casane dekker:
@@ -75,6 +93,7 @@ Casane dekker:
 - Multitraume (T02-kodar, DRG 486)
 - Elektive inngrep (artroskopi, rotator cuff, planovalgus)
 - Protesekirurgi (invers skulderprotese)
+- Reoperasjon for komplikasjon (infeksjon, implantatfjerning)
 - Postoperative komplikasjonar (nerveskade, karskade, compartment, DVT, delirium, blødning)
 
 ## Filformat

@@ -229,6 +229,16 @@
         "hd": "M751",
         "drg": "232"
       }
+    },
+    {
+      "id": 28,
+      "name": "Infisert tibia-margnagle — fjerning/debridement — diabetes + KOLS",
+      "text": "infeksjon i osteosyntesemateriale i tibia 3 månader etter margnagling hos pasient med kjend diabetes type 2 og KOLS, fjerning av nagle og debridement",
+      "expect": {
+        "procs_any": ["NGW69", "NGU49"],
+        "hd": "T846",
+        "drg": ["218", "219"]
+      }
     }
   ]
 }
