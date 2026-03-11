@@ -1,0 +1,256 @@
+{
+  "description": "Kodenamn EMMA — testcase for bidiagnosar som ofte vert gløymde. Basert på verifiserte golden-case med tillegg av realistiske nyoppståtte tilstandar/komplikasjonar. IKKJE verifiserte gjennom appen — expect-verdiar er estimat.",
+  "version": "0.2",
+  "created": "2026-03-11",
+  "status": "DELVIS VERIFISERT — expect justert etter første eval-køyring",
+  "source": "Bidiagnose-tips frå klinisk kodingsrettleiar (e-post mars 2026)",
+  "cc_analysis": {
+    "har_cc": {
+      "F050": {"compl": "20C01", "type": "standard CC", "tekst": "Delirium"},
+      "K560": {"compl": "06G13", "type": "major CC", "tekst": "Paralytisk ileus"},
+      "R33":  {"compl": "11C20", "type": "standard CC", "tekst": "Urinretensjon"},
+      "E871": {"compl": "10C10", "type": "standard CC", "tekst": "Hyponatremi"},
+      "E870": {"compl": "10G10", "type": "major CC", "tekst": "Hypernatremi"},
+      "E876": {"compl": "10C10", "type": "standard CC", "tekst": "Hypokalemi"},
+      "E440": {"compl": "10C09", "type": "standard CC", "tekst": "Moderat underernæring"},
+      "E43":  {"compl": "10G09", "type": "major CC", "tekst": "Alvorleg underernæring"},
+      "E46":  {"compl": "10G09", "type": "major CC", "tekst": "Uspesifisert underernæring"},
+      "D62":  {"compl": "16C07", "type": "standard CC", "tekst": "Akutt posthemorragisk anemi"},
+      "L892": {"compl": "09C05", "type": "standard CC", "tekst": "Trykksår grad III"},
+      "L893": {"compl": "09G05", "type": "major CC", "tekst": "Trykksår grad IV"},
+      "J189": {"compl": "04C01", "type": "standard CC", "tekst": "Pneumoni"},
+      "N390": {"compl": "11C12", "type": "standard CC", "tekst": "UVI"},
+      "T814": {"compl": "21G02", "type": "major CC", "tekst": "Postop infeksjon"},
+      "N179": {"compl": "11G08", "type": "major CC", "tekst": "Akutt nyresvikt"},
+      "I269": {"compl": "05G34", "type": "major CC", "tekst": "Lungeemboli"},
+      "A419": {"compl": "18G20", "type": "major CC", "tekst": "Sepsis"}
+    },
+    "har_ikkje_cc": {
+      "K590": "Obstipasjon — INGEN CC-effekt",
+      "L890": "Trykksår grad I — INGEN CC",
+      "L891": "Trykksår grad II — INGEN CC",
+      "B962": "E.coli som årsak — INGEN CC (etiologisk tilleggskode)"
+    },
+    "eksklusjonar": {
+      "T814_ekskludert_for": "T845, T846, T847 — postop infeksjon tel IKKJE som CC når HD allereie er infeksjonskode"
+    }
+  },
+  "cases": [
+    {
+      "id": "E01",
+      "name": "Pertrokantær femurfraktur — margnagle — underernæring + delirium",
+      "basert_paa": "golden case 19",
+      "text": "pertrokantær femurfraktur hos 82 år gamal kvinne, operert med margnagle, utvikla postoperativt delirium, kjend underernæring",
+      "bidiagnosar_fokus": ["E46 underernæring (major CC 10G09)", "F050 delirium (standard CC 20C01)"],
+      "expect": {
+        "procs": ["NFJ51"],
+        "hd": "S721",
+        "diags_contain": ["S721", "E46", "F05"],
+        "drg": ["210N", "211N"],
+        "cc_effekt": "211N (95 629) → 210N (145 605) = +49 976 kr"
+      }
+    },
+    {
+      "id": "E02",
+      "name": "Pertrokantær femurfraktur — margnagle — pneumoni + hyponatremi",
+      "basert_paa": "golden case 19",
+      "text": "pertrokantær femurfraktur hos 78 år gamal mann, operert med margnagle, utvikla postoperativ pneumoni og hyponatremi",
+      "bidiagnosar_fokus": ["J189 pneumoni (standard CC 04C01)", "E871 hyponatremi (standard CC 10C10)"],
+      "expect": {
+        "procs": ["NFJ51"],
+        "hd": "S721",
+        "diags_contain": ["S721", "J189", "E871"],
+        "drg": ["210N", "211N"],
+        "cc_effekt": "211N (95 629) → 210N (145 605) = +49 976 kr"
+      }
+    },
+    {
+      "id": "E03",
+      "name": "Pertrokantær femurfraktur — margnagle — postop UVI + urinretensjon",
+      "basert_paa": "golden case 19",
+      "text": "pertrokantær femurfraktur hos 80 år gamal kvinne, operert med margnagle, postoperativ urinretensjon og urinveisinfeksjon med oppvekst av e.coli",
+      "bidiagnosar_fokus": ["R33 urinretensjon (standard CC 11C20)", "N390 UVI (standard CC 11C12)", "T814 postop infeksjon (major CC 21G02)", "B962 E.coli (etiologisk, ingen CC)"],
+      "kodingsregel": "Postop UVI = T81.4 + N39.0 + B96.2. T81.4 er major CC!",
+      "expect": {
+        "procs": ["NFJ51"],
+        "hd": "S721",
+        "diags_contain": ["S721", "N390", "R33"],
+        "drg": ["210N", "211N"],
+        "cc_effekt": "211N (95 629) → 210N (145 605) = +49 976 kr",
+        "notat": "T81.4 manglar — appen legg ikkje til postop-infeksjonskode automatisk. Kodingsregel som ikkje er implementert."
+      }
+    },
+    {
+      "id": "E04",
+      "name": "Bimalleolær ankelfraktur — plate/skruer — paralytisk ileus + hypokalemi",
+      "basert_paa": "golden case 20",
+      "text": "bimalleolær ankelfraktur operert med plate og skruer, postoperativt utvikla paralytisk ileus og hypokalemi",
+      "bidiagnosar_fokus": ["K560 paralytisk ileus (major CC 06G13)", "E876 hypokalemi (standard CC 10C10)"],
+      "expect": {
+        "procs": ["NHJ62"],
+        "hd": "S828",
+        "diags_contain": ["S828", "K560", "E876"],
+        "drg": ["218", "219"],
+        "cc_effekt": "219 (131 791) → 218 (185 249) = +53 458 kr"
+      }
+    },
+    {
+      "id": "E05",
+      "name": "Tibialplatåfraktur — plate/skruer — akutt posthemorragisk anemi + UVI",
+      "basert_paa": "golden case 9",
+      "text": "tibialplatåfraktur operert med plate og skruer, postoperativ blødning med akutt posthemorragisk anemi og behov for blodtransfusjon, utvikla urinveisinfeksjon under opphaldet",
+      "bidiagnosar_fokus": ["D62 posthemorragisk anemi (standard CC 16C07)", "N390 UVI (standard CC 11C12)"],
+      "expect": {
+        "procs": ["NGJ61"],
+        "hd": "S821",
+        "diags_contain": ["S821", "D62", "N390"],
+        "drg": ["218", "219"],
+        "cc_effekt": "219 (131 791) → 218 (185 249) = +53 458 kr"
+      }
+    },
+    {
+      "id": "E06",
+      "name": "Acetabulumfraktur — plate/skruer — lungeemboli + akutt nyresvikt",
+      "basert_paa": "golden case 4",
+      "text": "brudd i acetabulum operert med plate og skruer, postoperativ lungeemboli og akutt nyresvikt",
+      "bidiagnosar_fokus": ["I269 lungeemboli (major CC 05G34)", "N179 akutt nyresvikt (major CC 11G08)"],
+      "expect": {
+        "procs": ["NEJ69"],
+        "hd": "S324",
+        "diags_contain": ["S324", "I269", "N179"],
+        "drg": ["210A", "210N", "211A", "211N"],
+        "cc_effekt": "211N (95 629) → 210N (145 605) = +49 976 kr. To major CC!"
+      }
+    },
+    {
+      "id": "E07",
+      "name": "Burst-fraktur L2-L4 — bakre fiksasjon — trykksår sakrum grad III + underernæring",
+      "basert_paa": "golden case 8",
+      "text": "ryggbrudd burst L2, L3 og L4 operert med bakre fiksasjon med skruer og stag, nerveskade med blæreparese, utvikla trykksår grad III over sacrum under opphaldet, kjend underernæring",
+      "bidiagnosar_fokus": ["L892 trykksår grad III (standard CC 09C05)", "E46 underernæring (major CC 10G09)"],
+      "expect": {
+        "procs": ["NAJ54"],
+        "hd": "S32",
+        "diags_contain": ["S32", "G834", "L89", "E46"],
+        "drg": ["214B", "215B"],
+        "cc_effekt": "215B (178 903) → 214B (335 851) = +156 948 kr"
+      }
+    },
+    {
+      "id": "E08",
+      "name": "Spondylodese L4/L5 — postop UVI med E.coli + urinretensjon",
+      "basert_paa": "golden case 25",
+      "text": "degenerativ spondylolistese L4/L5 med spinal stenose, operert med bakre spondylodese med skruer og stag, postoperativ urinretensjon og urinveisinfeksjon med oppvekst av E.coli",
+      "bidiagnosar_fokus": ["T814 postop infeksjon (major CC 21G02)", "N390 UVI (standard CC 11C12)", "R33 urinretensjon (standard CC 11C20)", "B962 E.coli (etiologisk)"],
+      "kodingsregel": "Postop UVI = T81.4 + N39.0 + B96.2",
+      "expect": {
+        "procs": ["NAG74"],
+        "hd": "M431",
+        "diags_contain": ["M431", "N390", "R33"],
+        "drg": ["214B", "215B"],
+        "cc_effekt": "215B (178 903) → 214B (335 851) = +156 948 kr",
+        "notat": "T81.4 manglar — same som E03. Appen legg ikkje til postop-infeksjonskode."
+      }
+    },
+    {
+      "id": "E09",
+      "name": "Distal femurfraktur — plate/skruer — sepsis + akutt nyresvikt",
+      "basert_paa": "golden case 5",
+      "text": "brudd i distale femur operert med plate og skruer, postoperativt utvikla sepsis med akutt nyresvikt",
+      "bidiagnosar_fokus": ["A419 sepsis (major CC 18G20)", "N179 akutt nyresvikt (major CC 11G08)"],
+      "expect": {
+        "procs_any": ["NFJ65", "NFJ45"],
+        "hd": "S724",
+        "diags_contain": ["S724", "A419", "N179"],
+        "drg": ["210A", "210N", "211A", "211N"],
+        "cc_effekt": "211A (182 890) → 210A (317 882) = +134 992 kr. To major CC!"
+      }
+    },
+    {
+      "id": "E10",
+      "name": "Proksimal humerusfraktur — invers skulderprotese — pneumoni + delirium",
+      "basert_paa": "golden case 21",
+      "text": "proksimal humerusfraktur hos 79 år gamal kvinne operert med invers skulderprotese hybrid, utvikla postoperativ pneumoni og delirium",
+      "bidiagnosar_fokus": ["J189 pneumoni (standard CC 04C01)", "F05 delirium (standard CC 20C01)"],
+      "notat": "Appen tolka som periprotetisk (M96.6/NBB20) utan 'hybrid' og tydelegare frakturtekst. Lagt til 'hybrid' som i golden case 21.",
+      "expect": {
+        "procs": ["NBB30"],
+        "hd": "S422",
+        "diags_contain": ["S422", "J189", "F05"],
+        "drg": ["491"],
+        "cc_effekt": "491 er eige DRG for skulderprotese — sjekk om CC endrar noko"
+      }
+    },
+    {
+      "id": "E11",
+      "name": "Open tibiaskaftfraktur — margnagle — hypernatremi + posthemorragisk anemi",
+      "basert_paa": "golden case 11",
+      "text": "open tibiaskaftfraktur med bløtdelsskade operert med margnagle og delhudstransplantat, postoperativt utvikla hypernatremi og akutt posthemorragisk anemi",
+      "bidiagnosar_fokus": ["E870 hypernatremi (major CC 10G10)", "D62 posthemorragisk anemi (standard CC 16C07)"],
+      "expect": {
+        "procs_any": ["NGJ52", "ZZA00"],
+        "hd": "S822",
+        "diags_contain": ["S822", "E870", "D62"],
+        "drg": ["217"],
+        "cc_effekt": "217 er eige DRG for hudtransplantat (465 059 kr) — sjekk CC-effekt"
+      }
+    },
+    {
+      "id": "E12",
+      "name": "Distal radiusfraktur — volar plate — underernæring + hyponatremi (eldre)",
+      "basert_paa": "golden case 14",
+      "text": "distal radiusfraktur etter fall hos 81 år gamal kvinne, operert med volar plate, kjend osteoporose og underernæring, utvikla hyponatremi postoperativt",
+      "bidiagnosar_fokus": ["E46 underernæring (major CC 10G09)", "E871 hyponatremi (standard CC 10C10)"],
+      "expect": {
+        "procs": ["NCJ65"],
+        "hd": "S525",
+        "diags_contain": ["S525", "M81", "E46", "E871"],
+        "drg": ["223", "224A"],
+        "cc_effekt": "224A (81 310) → 223 (117 472) = +36 162 kr"
+      }
+    },
+    {
+      "id": "E13",
+      "name": "Artroskopisk meniskektomi — postop DVT + lungeemboli",
+      "basert_paa": "golden case 16",
+      "text": "artroskopisk meniskektomi for gammal medial meniskruptur i kne, utvikla djup venetrombose og lungeemboli postoperativt",
+      "bidiagnosar_fokus": ["I269 lungeemboli (major CC 05G34)", "I802 DVT (CC)"],
+      "expect": {
+        "procs": ["NGD01"],
+        "hd": "M232",
+        "diags_contain": ["M232", "I269"],
+        "drg": ["221", "222", "232"],
+        "cc_effekt": "222 (97 145) → 221 (189 573) = +92 428 kr"
+      }
+    },
+    {
+      "id": "E14",
+      "name": "Infisert kneprotese — revisjon — sepsis + akutt nyresvikt + delirium",
+      "basert_paa": "golden case 27",
+      "text": "infeksjon i kneprotese 2 år etter primær totalprotese, operert med revisjon og ny sementert totalprotese, postoperativt utvikla sepsis, akutt nyresvikt og delirium",
+      "bidiagnosar_fokus": ["A419 sepsis (major CC 18G20)", "N179 akutt nyresvikt (major CC 11G08)", "F050 delirium (standard CC 20C01)"],
+      "kodingsregel": "NB: T81.4 er EKSKLUDERT som CC når HD er T84.5 (protese-infeksjon). Men sepsis, nyresvikt og delirium er IKKJE ekskluderte!",
+      "expect": {
+        "procs_any": ["NGW69", "NGC40"],
+        "hd": "T845",
+        "diags_contain": ["T845", "A419", "N179", "F05"],
+        "drg": ["209J"],
+        "cc_effekt": "209J allereie høgaste DRG (331 415 kr) — men sepsis/nyresvikt kan påverke liggedøgn"
+      }
+    },
+    {
+      "id": "E15",
+      "name": "Torakalvirvel-fraktur — bakre fiksasjon — paralytisk ileus + trykksår grad IV",
+      "basert_paa": "golden case 18",
+      "text": "brudd i torakalvirvel etter fall frå stige med inkomplett ryggmargskade, operert med bakre fiksasjon med skruer og stag, utvikla paralytisk ileus og trykksår grad IV over sacrum",
+      "bidiagnosar_fokus": ["K560 paralytisk ileus (major CC 06G13)", "L893 trykksår grad IV (major CC 09G05)"],
+      "expect": {
+        "procs": ["NAJ52"],
+        "hd": "S220",
+        "diags_contain": ["S220", "K560", "L893"],
+        "drg": ["214B", "215B"],
+        "cc_effekt": "215B (178 903) → 214B (335 851) = +156 948 kr. To major CC!"
+      }
+    }
+  ]
+}
