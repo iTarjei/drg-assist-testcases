@@ -1,0 +1,48 @@
+{
+  "description": "Parkerte emma-case som IKKJE passerte manuell testing. Krev app-endring eller prompt-forbetring før dei kan inn i golden.json.",
+  "created": "2026-03-11",
+  "cases": [
+    {
+      "id": "E03",
+      "name": "Pertrokantær femurfraktur — margnagle — postop UVI + urinretensjon",
+      "text": "pertrokantær femurfraktur hos 80 år gamal kvinne, operert med margnagle, postoperativ urinretensjon og urinveisinfeksjon med oppvekst av e.coli",
+      "problem": "R33 (urinretensjon) vert ikkje foreslått som bidiagnose. T81.4 (postop infeksjon, major CC) manglar — appen legg ikkje til dette for postop UVI.",
+      "krev": "App-endring: T81.4-injeksjon for postop UVI + R33 som bidiagnose-forslag"
+    },
+    {
+      "id": "E07",
+      "name": "Burst-fraktur L2-L4 — bakre fiksasjon — trykksår sakrum grad III + underernæring",
+      "text": "ryggbrudd burst L2, L3 og L4 operert med bakre fiksasjon med skruer og stag, nerveskade med blæreparese, utvikla trykksår grad III over sacrum under opphaldet, kjend underernæring",
+      "problem": "Feil prosedyrekode NAT24 (korreksjon) i staden for NAJ54 (fraktur-osteosyntese). LLM ustabil på trykksårgradering. Kjend problem frå golden case 8.",
+      "krev": "Prompt-forbetring for rygg-prosedyrar + trykksårgradering"
+    },
+    {
+      "id": "E08",
+      "name": "Spondylodese L4/L5 — postop UVI med E.coli + urinretensjon",
+      "text": "degenerativ spondylolistese L4/L5 med spinal stenose, operert med bakre spondylodese med skruer og stag, postoperativ urinretensjon og urinveisinfeksjon med oppvekst av E.coli",
+      "problem": "T81.4 manglar for postop UVI — same som E03.",
+      "krev": "App-endring: T81.4-injeksjon for postop UVI"
+    },
+    {
+      "id": "E10",
+      "name": "Proksimal humerusfraktur — invers skulderprotese — pneumoni + delirium",
+      "text": "proksimal humerusfraktur hos 79 år gamal kvinne operert med invers skulderprotese hybrid, utvikla postoperativ pneumoni og delirium",
+      "problem": "Appen vel J95.8 (åndedrettsforstyrring etter prosedyre) i staden for J18.9 (pneumoni). Per Kodeveiledningen kap. 4.2.6 skal postop pneumoni kodast med vanleg pneumonikode — den 'kunne oppstått ellers'.",
+      "krev": "Prompt-forbetring: postop pneumoni = J18.x, ikkje J95.8"
+    },
+    {
+      "id": "E14",
+      "name": "Infisert kneprotese — revisjon — sepsis + akutt nyresvikt + delirium",
+      "text": "infeksjon i kneprotese 2 år etter primær totalprotese, operert med revisjon og ny sementert totalprotese, postoperativt utvikla sepsis, akutt nyresvikt og delirium",
+      "problem": "Feil prosedyrekode NGB20 (primær protese utan sement). NGC40 OK. NGW69 (reopkode) manglar. Bidiagnosar alle korrekte.",
+      "krev": "Prompt-forbetring for revisjonsprotese-koding"
+    },
+    {
+      "id": "E15",
+      "name": "Torakalvirvel-fraktur — bakre fiksasjon — paralytisk ileus + trykksår grad IV",
+      "text": "brudd i torakalvirvel etter fall frå stige med inkomplett ryggmargskade, operert med bakre fiksasjon med skruer og stag, utvikla paralytisk ileus og trykksår grad IV over sacrum",
+      "problem": "Bidiagnosar OK (K56.0, L89.3). Men S14.1 (cervikalmarg) i staden for S24.1 (torakalmarg) — feil nivå på ryggmargskaden.",
+      "krev": "Prompt-forbetring: ryggmargskade-nivå må matche frakturnivå"
+    }
+  ]
+}
