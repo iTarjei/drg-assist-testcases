@@ -18,9 +18,15 @@ Testcase for validering av [DRG-Assist](https://drgassist.com), eit AI-støtta b
 
 Sist køyrt: 11. mars 2026.
 
-## Eksempel: CC-differanse
+## Kvifor dette betyr noko
 
-Klinikaren skriv ein vanleg klinisk beskriving — verktøyet tolkar friteksten, identifiserer prosedyrekodar, diagnosar og tilleggstilstandar, og viser DRG-konsekvensen i sanntid. Tre eksempel på korleis ein bidiagnose endrar DRG-gruppe:
+DRG-gruppa eit sjukehusopphald hamnar i avgjer refusjonen sjukehuset får. To mekanismar gjer at opphaldet kan vere *underkoda* — og verktøyet fangar begge.
+
+## Eksempel 1: Tilleggstilstandar (CC-differanse)
+
+Mange pasientar har tilleggstilstandar (t.d. diabetes, delirium, nyresvikt) som gjer behandlinga meir kompleks. Desse skal kodast som bidiagnosar og kan flytte opphaldet til ein høgare DRG-gruppe (CC = *complication/comorbidity*). I praksis vert dei ofte utelatne fordi klinikaren fokuserer på hovudinngrepet.
+
+Klinikaren skriv ein vanleg klinisk beskriving — verktøyet tolkar friteksten, identifiserer kodar og tilleggstilstandar, og viser DRG-konsekvensen i sanntid:
 
 ### Bimalleolær ankelfraktur + diabetes type 2
 - **Input:** «bimalleolær ankelfraktur operert med plate og skruer, pasienten har diabetes type 2»
@@ -43,11 +49,9 @@ Klinikaren skriv ein vanleg klinisk beskriving — verktøyet tolkar friteksten,
 - **Bidiagnose med CC:** F05.9 — Delirium
 - **DRG-effekt:** 211N (95 629 kr) → 210N (145 605 kr) = **+49 976 kr**
 
-## Eksempel: Multitraume-deteksjon
+## Eksempel 2: Multitraume-deteksjon
 
-CC-differanse viser effekten av tilleggstilstandar *innanfor* ei DRG-gruppe. Men nokre kodingsmønster flyttar heile grupperinga til ein høgare DRG — med langt større utslag.
-
-Når ein pasient har frakturar i to ulike grov-regionar (t.d. overekstremitet + underekstremitet), skal hovuddiagnosen vere ein T02.x-kode (multitraume) i staden for ein einskild S-kode. Dette flyttar grupperinga frå vanleg ortopedisk DRG til multitraume-DRG (MDC 24).
+Den andre mekanismen har endå større utslag. Når ein pasient har frakturar i to ulike kroppsregionar (t.d. arm + lår), skal hovuddiagnosen vere ein multitraumekode (T02.x) i staden for ein einskild frakturkode. Dette flyttar heile opphaldet til ei eiga multitraume-DRG-gruppe — men mønsteret er lett å oversjå når kirurgen kodar kvar fraktur for seg.
 
 ### Skaftfraktur humerus + femur — begge med margnagle
 - **Input:** «fall frå stillas, open skaftfraktur humerus og lukka femurskaftfraktur, begge operert med margnagle»
@@ -61,7 +65,7 @@ Når ein pasient har frakturar i to ulike grov-regionar (t.d. overekstremitet + 
 | Korrekt T02.6 (multitraume) | 486 | 479 827 kr |
 | **Differanse** | | **+348 036 kr** |
 
-Verktøyet detekterer multitraume-mønsteret automatisk og foreslår T02.x som hovuddiagnose — noko ein klinikar lett kan oversjå når frakturane er koda kvar for seg.
+Verktøyet detekterer multitraume-mønsteret automatisk og foreslår T02.x som hovuddiagnose. Éin pasient, same behandling — men korrekt koding gjev nesten **350 000 kr meir** i refusjon.
 
 ## Kategoriar
 
