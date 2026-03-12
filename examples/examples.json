@@ -1,0 +1,92 @@
+{
+  "description": "DRG-Assist: 3 utvalde eksempel med syntetisk journal og gullstandard-kodar",
+  "license": "CC BY 4.0",
+  "version": "1.0",
+  "cases": [
+    {
+      "case_id": 6,
+      "name": "Bilulykke — multitraume — humerus+femur — arterieskade — compartment",
+      "template": "B",
+      "must_contain": [
+        "kollisjon",
+        "humerus",
+        "femur",
+        "open",
+        "nagle",
+        "arterie",
+        "compartment",
+        "fasciotomi"
+      ],
+      "golden_expect": {
+        "procs_any": [
+          "NFJ54",
+          "NBJ55",
+          "NGM09"
+        ],
+        "hd": "T026",
+        "mt_fractures": [
+          "S723",
+          "S423"
+        ],
+        "drg": "486"
+      },
+      "clinical_notes": "28 år gamal mann, bilulykke. Multitraume med skaftfraktur humerus (lukka) og open skaftfraktur femur. Begge operert med margnagle. Skade på arteria femoralis — karkirurg reparerer. Compartmentsyndrom i leggen — fasciotomi. Traumeteam-mottak."
+    },
+    {
+      "case_id": 20,
+      "name": "Bimalleolær ankelfraktur — plate/skruer — diabetes type 2",
+      "template": "A_comorbidity",
+      "must_contain": [
+        "bimalleolær",
+        "ankel",
+        "plate",
+        "skruer",
+        "diabetes"
+      ],
+      "golden_expect": {
+        "procs": [
+          "NHJ62"
+        ],
+        "hd": "S82",
+        "diags_contain": [
+          "S82",
+          "E119"
+        ],
+        "drg": [
+          "218",
+          "219"
+        ]
+      },
+      "clinical_notes": "58 år gamal mann, vrikka foten på fortauskant. Bimalleolær ankelfraktur (Weber B). Kjend diabetes type 2 (Metformin). Operert med plate og skruer på laterale og mediale malleol."
+    },
+    {
+      "case_id": 28,
+      "name": "Pertrokantær femurfraktur — margnagle — underernæring + delirium",
+      "template": "A_complication",
+      "must_contain": [
+        "pertrokantær",
+        "femurfraktur",
+        "fall",
+        "margnagle",
+        "underernæring",
+        "delirium"
+      ],
+      "golden_expect": {
+        "procs": [
+          "NFJ51"
+        ],
+        "hd": "S721",
+        "diags_contain": [
+          "S721",
+          "E46",
+          "F05"
+        ],
+        "drg": [
+          "210N",
+          "211N"
+        ]
+      },
+      "clinical_notes": "82 år gamal kvinne, fall i heimen. Pertrokantær femurfraktur. Kjend underernæring (BMI 17). Operert med margnagle. Postoperativt delirium dag 2. Geriater tilsett."
+    }
+  ]
+}

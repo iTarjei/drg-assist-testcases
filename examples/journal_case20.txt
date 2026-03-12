@@ -1,0 +1,108 @@
+INNKOMSTJOURNAL
+Haukeland universitetssjukehus, Ortopedisk avdeling
+Dato: 01.03.2026 kl 19:45
+Pasient: Stian Petter Grønnevik, f. 19.10.1967
+
+Tilvisande lege: Dr. Ole Johannes Tvedt, Bergen legevakt
+Mottakande lege: LIS2 Marius Aas, Ortopedisk avdeling
+
+Innleggingsårsak:
+58 år gamal mann innlagt etter at han vrikka venstre fot då han trakka feil ned frå fortauskant i ettermiddag. Umiddelbar smerte og hevelse i venstre ankel. Ikkje i stand til å belaste venstre fot. Tok seg til Bergen legevakt på eiga hand, tilvist Haukeland etter røntgen.
+
+Tidlegare sjukehistorie:
+- Diabetes mellitus type 2 diagnostisert 2018, brukar Metformin 1000mg x 2
+- HbA1c sist målt 52 mmol/mol (desember 2025)
+- Mild overvekt (BMI 29)
+- Ingen kjende diabeteskomplikasjonar
+- Følgt opp av fastlege dr. Turid Langhelle, Arna legesenter
+
+Klinisk undersøking:
+Våken, orientert, hemodynamisk stabil. BT 138/82, puls 74 regelmessig. Tydeleg hevelse og deformitet over venstre ankel. Palpasjonsømheit over laterale og mediale malleol. Hud intakt, ingen open skade. Neurovaskulær status distalt intakt — perifere pulsar palperbare, sensibilitet normal. Kapillærfylling <2 sek i tær.
+
+Røntgen:
+Rtg venstre ankel i tre plan: Bimalleolær ankelfraktur. Skråfraktur laterale malleol (Weber B) med 2 mm dislosering. Tverrfraktur mediale malleol med 3 mm dislosering. Syndesmosen ser intakt ut. Bakre malleol utan fraktur.
+
+Blodprøvar:
+Hb 14.5, Trc 223, INR 1.0, Krea 82, eGFR 88, Na 140, K 4.2, CRP <5, Glukose 8.2 (ikkje fastande), HbA1c 53 mmol/mol
+
+Plan:
+Gipsekne (bakre spalteortose) pålagt. Operasjon med plate og skruer planlagt i morgon. Metformin seponert operasjonsdagen (renal forsiktigheit). Faste frå midnatt. Fragmin 5000 IE s.c. kl 22. Smertelindring med Paracet 1g x 4 og Ibux 600mg x 3. Blodglukose-monitorering x 4 dagleg.
+
+---
+
+OPERASJONSBESKRIVELSE
+Haukeland universitetssjukehus, Ortopedisk avdeling
+Dato: 02.03.2026
+Operatør: Overlege Håkon Olav Lid, Ortopedisk avdeling
+Assistent: LIS2 Marius Aas
+Anestesi: Spinalanestesi v/ anestesilege dr. Lena Thorbjørnsen
+
+Pasient: Stian Petter Grønnevik, f. 19.10.1967
+
+Diagnose: Bimalleolær ankelfraktur venstre side, Weber B (S82.6)
+
+Prosedyre: Osteosyntese med plate og skruer, ankel (NHJ62)
+
+Operasjonsbeskrivelse:
+Pasienten i ryggleie. Blodtomheit på venstre lår (300 mmHg).
+
+Laterale malleol først: Lateralt snitt over distale fibula, ca 8 cm. Frakturen eksponert og reponert anatomisk. Fiksert med Synthes 1/3-rørplate, 6 hol, og 4 kortikale skruer 3.5mm. God plateposisjon og frakturreposisjon verifisert med gjennomlysning.
+
+Mediale malleol: Medialt kurvlineært snitt, ca 4 cm. Tverrfrakturen identifisert. Reposisjon med peang, fiksert med 2 kanylerte skruer 4.0x40mm parallelt. Gjennomlysning viser anatomisk reposisjon.
+
+Syndesmosetest (Cotton-test, ekstern rotasjonstest) under gjennomlysning: Stabil syndesmose, ingen fiksasjon naudsynt.
+
+Gjennomlysningskontroll i to plan viser anatomisk rekonstruksjon av ankelgaffelen. Blodtomheit slept etter 58 minutt. Hemostase. Lukking i lag med resorberbar sutur. Steril bandasje og bakre gipsskinne. Estimert blodtap 100 ml.
+
+Postoperativ plan:
+Avlasting venstre bein i 6 veker. Fragmin 5000 IE dagleg i 14 dagar. Rtg-kontroll i morgon. Mobilisering med krykker frå dag 1. Metformin reoppstart dag 1 postoperativt. Blodglukose-monitorering fortset.
+
+---
+
+JOURNALNOTAT — POSTOPERATIVT FORLØP
+Haukeland universitetssjukehus, Ortopedisk avdeling, sengepost 4A
+Dato: 04.03.2026
+Signert: Sjukepleiar Ragnhild Nesse
+
+Stian Petter Grønnevik, f. 19.10.1967
+
+Dag 2 postoperativt. Ukomplisert forløp. Pasienten har det bra, lite smerter med Paracet og Ibux. Operasjonssåra ser pene ut, ingen teikn til hevelse, raudfarge eller sekresjon ut over det forventa. Bandasje tørr.
+
+Blodglukose-verdiar siste døgn: 7.4 — 9.1 — 6.8 — 8.3 mmol/L. Akseptable verdiar. Metformin 1000mg x 2 reoppstarta i går.
+
+Mobilisert med fysioterapeut i dag — går med krykker og avlasting av venstre bein i korridor. Stabil gange. Instruert i trappegange.
+
+Rtg-kontroll 03.03.2026: Tilfredsstillande stilling av implantat og frakturreposisjon.
+
+Pårørande Anita Grønnevik (ektefelle) informert ved besøk om vidare plan og oppfølging.
+
+---
+
+EPIKRISE
+Haukeland universitetssjukehus, Ortopedisk avdeling
+Utskrivingsdato: 07.03.2026
+Innleggingsdato: 01.03.2026
+
+Pasient: Stian Petter Grønnevik, f. 19.10.1967, Ulriksdal 15, 5009 Bergen
+Fastlege: Dr. Turid Langhelle, Arna legesenter
+
+Utskriven til: Heimen
+
+Diagnosar:
+1. S82.6 — Bimalleolær ankelfraktur venstre side
+2. E11.9 — Diabetes mellitus type 2, utan komplikasjonar
+
+Prosedyre:
+NHJ62 — Osteosyntese med plate og skruer, ankel
+
+Samandrag:
+58 år gamal mann innlagt etter at han vrikka venstre fot på fortauskant med bimalleolær ankelfraktur (Weber B). Kjend diabetes type 2 på Metformin. Operert 02.03.2026 med open reposisjon og fiksasjon: laterale malleol med Synthes 1/3-rørplate (6 hol, 4 skruer 3.5mm), mediale malleol med 2 kanylerte skruer (4.0x40mm). Syndesmosen stabil. Ukomplisert postoperativt forløp. Blodglukose stabil gjennom opphaldet. Mobilisert med krykker og avlasting.
+
+Vidare plan:
+- Avlasting venstre bein i totalt 6 veker
+- Fragmin 5000 IE s.c. dagleg i totalt 14 dagar (siste dose 15.03.2026)
+- Rtg-kontroll poliklinisk etter 6 veker (bestilt 13.04.2026)
+- Gipsskinne i 2 veker, deretter aircast-ortose
+- Paracet 1g x 4, trappe ned smertestillande
+- Metformin 1000mg x 2 fortset som før
+- Fastlege følgjer opp diabetes og suturfjerning etter 14 dagar

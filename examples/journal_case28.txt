@@ -1,0 +1,76 @@
+INNKOMSTJOURNAL
+Haukeland universitetssjukehus, Ortopedisk avdeling
+Dato: 15.01.2026 kl 21:45
+Pasient: Magnhild Irene Tangen, f. 14.03.1944
+Adresse: Damsgårdsveien 18, 5058 Bergen
+
+Tilvisande lege: Dr. Silje Halvorsen, Åsane legevakt
+Mottakande lege: LIS2 Erlend Tønnessen, Ortopedisk avdeling
+
+Innleggingsårsak:
+82 år gamal kvinne, fall i heimen. Snubla i teppekant, fall mot høgre side. Brukar rollator. Son Arne Tangen ringde 113. Tilvist frå Åsane legevakt med klinisk og radiologisk pertrokantær femurfraktur høgre side.
+
+Tidlegare sjukehistorie:
+- Demens (F03), diagnostisert 2023, Donepezil 5mg x 1
+- Hypertensjon (I10), Amlodipin 5mg x 1, Losartan 50mg x 1
+- Underernæring — BMI 17, vekttap 8 kg siste år, albumin 28 g/L
+- Osteoporose, Kalsium/vitamin D
+- Fastlege: Dr. Per Andersen, Åsane legesenter. Bur åleine, heimesjukepleie 2x dagleg.
+
+Klinisk undersøking:
+Skrøpeleg, kakektisk. GCS 14, noko forvirra. BT 148/78, puls 92, temp 36.8°C, sat 95%. Høgre hofte: forkorting 2 cm, utoverrotasjon. Uttalt smerte ved rørsle. Nevrovaskulær status distalt normal.
+
+Røntgen: Pertrokantær femurfraktur høgre side gjennom begge trokantarar. Moderat dislosering. Osteoporotisk skjelett.
+
+Blodprøvar: Hb 10.8, Trc 198, Lkc 8.2, INR 1.0, Na 137, K 4.1, Krea 68, eGFR 62, CRP 5, Albumin 26.
+
+Plan: Osteosyntese med margnagle i morgon. Faste frå midnatt. Fragmin 5000 IE. Ernæringsdrikk. Pårørande Arne Tangen (son) og Kristin Tangen (svigerdotter) informerte.
+
+---
+
+OPERASJONSBESKRIVELSE
+Dato: 16.01.2026
+Operatør: Overlege Magnus Vinje
+Assistent: LIS2 Erlend Tønnessen
+Anestesi: Spinalanestesi v/ dr. Kristin Aase
+
+Pasient: Magnhild Irene Tangen, f. 14.03.1944
+
+Diagnose: Pertrokantær femurfraktur høgre side (S72.1)
+Prosedyre: Osteosyntese med margnagle, femur proksimalt (NFJ51)
+
+Ryggleie på frakturbord, høgre bein i traksjon. Lukka reposisjon under gjennomlysning — akseptabel stilling. Lateralt snitt 5 cm proksimalt for trochanterspissen. Inngangspunkt i trochanterspiss. Gamma3 kort margnagle (Stryker) 180mm, 130 grader. Lagskrue 10.5mm sentralt i caput, TAD 18mm. Distal låseskrue sett inn. Gjennomlysning i to plan: god posisjon. Blodtap 150 ml. Lukka i lag.
+
+Postoperativ plan: Full vektbering. Fragmin 14 dagar. Mobilisering med rollator dag 1. Tilsyn geriater dr. Hilde Strand.
+
+---
+
+JOURNALNOTAT — POSTOPERATIVT FORLØP
+Ortopedisk avdeling, sengepost 4B
+Dato: 18.01.2026
+Signert: Sjukepleiar Marit Kvamme
+
+Dag 2 postop. Pasienten vart uroleg og agitert natt til i dag. Kjenner ikkje att omgivnadene. Forsøker klatre ut av senga. Vekslar mellom uro og apati, forverring kveldstid. Ikkje orientert for tid, stad eller situasjon.
+
+Geriater dr. Hilde Strand tilsett kl 10:15: Postoperativt delirium, hyperaktivt. Multifaktoriell etiologi — demens, underernæring, smerter, framandt miljø. Haldol 0.5mg x 2 fast, fastvakt, dag-natt-rytme. Oxynorm seponert. Paracet åleine.
+
+Sår reint og tørt. Hb 9.4, ikkje transfusjonskrevjande. Et lite, drikk noko ernæringsdrikk. Mobilisering avgrensa — forvirra og lite samarbeidsvillig, klarer stå med støtte. Pårørande Arne og Kristin Tangen informerte.
+
+---
+
+EPIKRISE
+Utskrivingsdato: 25.01.2026. Innleggingsdato: 15.01.2026.
+Pasient: Magnhild Irene Tangen, f. 14.03.1944, Damsgårdsveien 18, 5058 Bergen
+Utskriven til: Kommunal rehabiliteringsplass, Fyllingsdalen sjukeheim.
+
+Diagnosar:
+1. S72.1 — Pertrokantær femurfraktur, høgre side
+2. E46 — Underernæring, uspesifisert
+3. F05 — Delirium, ikkje utløyst av alkohol eller andre psykoaktive substansar
+
+Prosedyre:
+NFJ51 — Osteosyntese med margnagle, femur proksimalt
+
+82 år gamal kvinne med demens, hypertensjon og underernæring (BMI 17, albumin 26). Fall i heimen, pertrokantær femurfraktur høgre side. Operert 16.01 med Gamma3 kort margnagle. Dag 2 postoperativt delirium, behandla med Haldol. Gradvis betring, framleis noko desorientert ved utskriving. Mobilisert med rollator med tilsyn.
+
+Vidare plan: Rehabilitering. Fragmin t.o.m. 29.01. Haldol nedtrapping. Donepezil, Amlodipin, Losartan fortset. Ernæringsdrikk. Kontroll ortopedisk poliklinikk 6 veker.

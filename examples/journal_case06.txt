@@ -1,0 +1,150 @@
+INNKOMSTJOURNAL
+Haukeland universitetssjukehus, Ortopedisk avdeling / Traumeteam
+Dato: 01.02.2026 kl 03:45
+Pasient: Sindre Aleksander Hagen, f. 11.06.1997
+
+Tilvisande lege: Dr. Erik Sveen, AMK Vestland
+Mottakande lege: LIS3 Hanna Sørensen, Ortopedisk avdeling (traumeteam)
+
+Innleggingsårsak:
+28 år gamal mann bringa inn av ambulanse etter trafikkulykke kl 02:15. Førar i personbil, frontkollisjon mot autovern på E39 ved Rådal. Estimert fart ca 70 km/t. Bilbeltet var i bruk. Utløysing av airbag. Pasienten var medviten på skadestaden, GCS 15. Traumeteam varsla og aktivert.
+
+Traumemottak — primær undersøking:
+A: Fri luftveg, C-spine immobilisert.
+B: Sat 96%, sidelike respirasjonslyd, ingen pneumothorax klinisk.
+C: BT 105/70, puls 112. To grove IV-tilgangar etablert. 1000 ml Ringer infundert prehospitalt.
+D: GCS 15. Pupillar sidelike, reagerer på lys.
+E: Deformitet og hevelse venstre overarm. Hø lår med open sår anterolateralt ca 4 cm med synleg muskulatur, pågåande bløding — provisorisk bandasje. Frakturkrepitasjon hø femur. Svekka a. dorsalis pedis-puls hø fot.
+
+FAST-UL: Negativ for fri væske i abdomen.
+
+CT multitraume:
+- CT caput/C-spine: Ingen intrakraniell patologi. Ingen cervikale frakturar.
+- CT thorax/abdomen/bekken: Ingen thorax- eller abdominalskade. Ingen bekkenfraktur.
+- CT venstre humerus: Skaftfraktur humerus venstre side, AO 12-A3. Lukka.
+- CT høgre femur: Skaftfraktur femur høgre side, AO 32-B2. Beinbrot gjennom laterale cortex med sårkanal til hudoverflata — open fraktur Gustilo II.
+
+CT-angiografi høgre underekstremitet:
+Intimalapp i arteria femoralis superficialis i nivå med frakturen. Redusert distal flow. Karkirurg dr. Martin Eliassen varsla.
+
+Blodprøvar:
+Hb 10.8, Trc 198, INR 1.1, fibrinogen 3.2, Krea 82, Na 138, K 4.5, laktat 3.1, blodtype A Rh+, forlik 4 SAG
+
+Tidlegare sjukehistorie:
+Tidlegare frisk. Ingen faste medisinar. Inga kjend allergi. Mor Britt Hagen og far Per Inge Hagen oppgjevne som næraste pårørande.
+
+Plan:
+Akutt operasjon med osteosyntese humerus og femur, samt karkirurgisk reparasjon a. femoralis. Preoperativ Cefalotin 2g IV (open fraktur). Tetanusvaksine gjeven. Blod bestilt. Operasjon planlagt umiddelbart.
+
+---
+
+OPERASJONSBESKRIVELSE — HOVUDOPERASJON
+Haukeland universitetssjukehus, Ortopedisk avdeling
+Dato: 01.02.2026
+Operatør: Overlege Tor Helge Steen, Ortopedisk avdeling
+Assistent: LIS3 Thomas Ellingsen
+Karkirurg: Dr. Martin Eliassen (arteriell reparasjon)
+Anestesi: Generell anestesi v/ anestesilege dr. Andreas Kvernmo
+
+Pasient: Sindre Aleksander Hagen, f. 11.06.1997
+
+Diagnosar:
+1. Skaftfraktur humerus venstre side (S42.3)
+2. Open skaftfraktur femur høgre side, Gustilo II (S72.3)
+3. Skade på arteria femoralis høgre side (S75.0)
+
+Prosedyrar:
+NBJ55 — Osteosyntese med margnagle, humerusskaft
+NFJ54 — Osteosyntese med margnagle, femurskaft
+
+Operasjonsbeskrivelse:
+
+1) Humerus venstre side:
+Pasienten i «beach chair»-posisjon. Lukka reposisjon under gjennomlysning. Antegrad tilgang via rotatorcuff-splitting. Opning av inngangspunkt i humeruscaput. Innsetting av Expert Humeral Nail (Synthes), 8x220mm. Proksimal låsing med 2 spiralblad-skruar. Distal låsing med 2 skruar. Gjennomlysningskontroll i to plan viser akseptabel frakturstilling og god implantplassering. Lukking. Steril bandasje.
+
+2) Femur høgre side:
+Pasienten lagt om til ryggleie på strekkbord. Sårrevidering av det opne såret anterolateralt — ca 4 cm, devitalisert muskulatur excidert, grundig skylling med 3 liter NaCl. Antegrad tilgang via piriformis fossa. Lukka reposisjon under gjennomlysning vellykka etter manuell traksjon. Innsetting av Expert Femoral Nail (Synthes), 11x380mm. Proksimal låsing med 1 spiralblad og 1 låseskrue. Distal låsing med 2 skruar. Gjennomlysning i to plan viser god frakturstilling og implantplassering. Det opne såret er ikkje primærlukka — fuktig bandasje. Estimert totalt blodtap 600 ml. Transfundert 2 SAG peroperativt.
+
+3) Arteria femoralis høgre side (v/ karkirurg dr. Martin Eliassen):
+Tilgang via medial snitt på lår i nivå med frakturen. Arteria femoralis superficialis identifisert — intimalapp over ca 1.5 cm med subtotal okklusjon. Direkte sutur med 5-0 Prolene etter trombektomi med Fogarty-kateter. God distal flow etter reparasjon, palpabel a. dorsalis pedis-puls. Lukking over dren.
+
+Postoperativ plan:
+Intensivavdelinga for monitorering. Sirkulasjonskontrollar hø fot kvar time. Cefalotin 2g x 3 IV i 72 timar (open fraktur). Fragmin 5000 IE dagleg. Smertelindring med epiduralkateter.
+
+---
+
+OPERASJONSBESKRIVELSE — FASCIOTOMI
+Haukeland universitetssjukehus, Ortopedisk avdeling
+Dato: 02.02.2026
+Operatør: Overlege Tor Helge Steen, Ortopedisk avdeling
+Assistent: LIS3 Thomas Ellingsen
+Anestesi: Generell anestesi v/ anestesilege dr. Andreas Kvernmo
+
+Pasient: Sindre Aleksander Hagen, f. 11.06.1997
+
+Diagnose: Traumatisk compartmentsyndrom, høgre legg (T79.6)
+
+Prosedyre: Fasciotomi, legg (NGM09)
+
+Operasjonsbeskrivelse:
+Dag 1 postoperativt. Pasienten utviklar aukande smerter i høgre legg, smerter ved passiv tåekstensjon, spent legg. Compartmenttrykk målt: fremre losje 48 mmHg, laterale losje 42 mmHg (diastolisk BT 68). Indikasjon for akutt fasciotomi.
+
+Dobbelincisjon-teknikk. Lateralt snitt: Opning av fremre og laterale losje. Medialt snitt: Opning av overflatisk og djup bakre losje. Alle fire losjer dekomprimert. Muskulaturen i fremre losje er blass men kontraherer ved stimulering — viabel. Sår lagt opne med fuktig bandasje. Planlagt forseinka lukking.
+
+---
+
+JOURNALNOTAT — POSTOPERATIVT FORLØP
+Haukeland universitetssjukehus, Intensivavdelinga
+Dato: 04.02.2026
+Signert: Sjukepleiar Linda Fossheim
+
+Sindre Aleksander Hagen, f. 11.06.1997
+
+Dag 3 postoperativt (hovudoperasjon), dag 2 etter fasciotomi. Pasienten ligg på intensivavdelinga. Sirkulatorisk stabil, ikkje vasopressor. Temp 37.6°C. Hb kontroll 9.4 etter totalt 3 SAG.
+
+Høgre fot: God sirkulasjon, palpabel a. dorsalis pedis-puls. Kapillær refill < 2 sek. Sensibilitet intakt i alle dermatom. Tærørsle til stades. Fasciotomisåra ser vitale ut, muskulaturen rosafarga og kontraherer.
+
+Venstre arm: Mitella, hevelse avtakande. Radialispuls palpabel, fingerrørsle god.
+
+Smertelindring: Epiduralkateter fungerer tilfredsstillande. Paracet 1g x 4. Ikkje behov for tillegg av opioider siste 12 timar.
+
+Pårørande Britt Hagen (mor) og Per Inge Hagen (far) har vore på besøk dagleg sidan innkomstkvelden. Informert av overlege Tor Helge Steen om operasjonane og vidare plan.
+
+Plan: Overflytting til sengepost 4A i morgon dersom framleis stabil. Planlagt forseinka lukking av fasciotomisår om 3-5 dagar.
+
+---
+
+EPIKRISE
+Haukeland universitetssjukehus, Ortopedisk avdeling
+Utskrivingsdato: 15.02.2026
+Innleggingsdato: 01.02.2026
+
+Pasient: Sindre Aleksander Hagen, f. 11.06.1997, Sydnesgate 22, 5007 Bergen
+Fastlege: Dr. Dag Reidar Nesse, Nordnes legesenter
+
+Utskriven til: Heimen
+
+Diagnosar:
+1. T02.6 — Frakturar i overekstremitet og underekstremitet kombinert
+2. S72.3 — Femurskaftfraktur, open, høgre side
+3. S42.3 — Humerusskaftfraktur, venstre side
+4. S75.0 — Skade på arteria femoralis, høgre side
+5. T79.6 — Traumatisk compartmentsyndrom, høgre legg
+6. V43.0 — Bilførar skadd i kollisjon med personbil
+
+Prosedyrar:
+NFJ54 — Osteosyntese med margnagle, femurskaft
+NBJ55 — Osteosyntese med margnagle, humerusskaft
+NGM09 — Fasciotomi, legg
+
+Samandrag:
+28 år gamal mann innlagt etter frontkollisjon som bilførar. Multitraume med lukka humerusskaftfraktur venstre side, open femurskaftfraktur høgre side (Gustilo II) og skade på arteria femoralis høgre side. Akutt operert 01.02.2026 med margnagle humerus (Expert Humeral Nail 8x220mm) og margnagle femur (Expert Femoral Nail 11x380mm). Karkirurg dr. Martin Eliassen reparerte arteria femoralis med direkte sutur. Dag 2 utvikla compartmentsyndrom i høgre legg — akutt fasciotomi alle fire losjer. Intensivopphald i 3 dagar. Fasciotomisåra vart lukka sekundært dag 7. God sirkulasjon i høgre fot gjennom heile forløpet. Mobilisert med krykker, delvis vektbering hø underekstremitet.
+
+Vidare plan:
+- Avlasting hø underekstremitet med krykker i 6 veker, gradvis aukande belasting
+- Venstre arm: Fri rørsle etter tolegrense, unngå tunge løft i 8 veker
+- Fragmin 5000 IE dagleg i 14 dagar (siste dose 15.02.2026)
+- Rtg-kontroll humerus og femur poliklinisk etter 6 veker (bestilt 15.03.2026)
+- Kontroll karkirurgisk poliklinikk etter 4 veker
+- Sårskift fasciotomisår hos fastlege om 5 dagar
+- Paracet 1g x 4, Oxycontin 10mg x 2 — trappe ned
