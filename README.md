@@ -6,7 +6,7 @@ Eksempel frå [DRG-Assist](https://drgassist.com), eit AI-støtta beslutningsst�
 
 3 utvalde eksempel med **syntetisk klinisk journal** og **gullstandard-kodar** (NCSP, ICD-10, DRG). Journalane er generert frå kliniske case-spesifikasjonar — ingen reelle pasientdata.
 
-Verktøyet er validert mot 49 ortopediske testcase med 100 % nøyaktigheit (prosedyre, hovuddiagnose, DRG).
+Verktøyet er validert mot 50 ortopediske testcase med 100 % nøyaktigheit (prosedyre, hovuddiagnose, DRG).
 
 ## Eksempel
 
